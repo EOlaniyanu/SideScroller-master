@@ -47,16 +47,19 @@ public class Hero extends Actor
      */
     public void act() 
     {
+        
         // Add method call to movement method here
         movement();
+        
         //Add method call to checkCollision here
         checkCollisions();
+        
         reloadCounter++;
     }
     
+    // Add movement method here that will handle the movement right, left, and up
+    // for the Hero
     /**
-     * Add movement method here that will handle the movement right, left, and up
-     * for the Hero
      * movement controls the movement of the Hero 
      * @param There are no parameters
      * @return Nothing is returned
@@ -65,6 +68,7 @@ public class Hero extends Actor
     {
         if( Greenfoot.isKeyDown("right") )
         {
+            
             if ( lookingRight == false )
             {
                 original.mirrorHorizontally();
@@ -76,6 +80,7 @@ public class Hero extends Actor
         }
         else if( Greenfoot.isKeyDown("left") )
         {
+            
             if ( lookingRight == true )
             {
                 original.mirrorHorizontally();
@@ -88,18 +93,22 @@ public class Hero extends Actor
        
         if( Greenfoot.isKeyDown("up") )
         {
+            
             if( cannotJump == false )
             {
                 setImage(jumping);
                 y = up;
                 fall();
             }
+            
         }
         
         if( Greenfoot.isKeyDown("space") )
         {
+            // Correction: spaced out code and made it easier to read
             if( reloadCounter >= 25 ) 
             {
+                
                 if( lookingRight == true )
                 {
                     getWorld().addObject ( new Rasengan(this), getX() + 10 , getY() );
@@ -111,6 +120,7 @@ public class Hero extends Actor
                 
                 reloadCounter = 0;
             }
+            
         }
         
         if( getY() >= 360)
@@ -118,7 +128,6 @@ public class Hero extends Actor
             setLocation( getX(), 370);
             y = 0;
         }
-        
         
     }
     
@@ -135,12 +144,11 @@ public class Hero extends Actor
         y = y + ySpeed;
     }
     
-  
+    //   Add checkCollision method here that will check if we've landed on the top
+    //   of an Enemy, which will increase the score; touched an Enemy otherwise, which
+    //   will have us lose the game; touched a platform which will allow us to jump again;
+    //   or fall
     /**
-     * Add checkCollision method here that will check if we've landed on the top
-     * of an Enemy, which will increase the score; touched an Enemy otherwise, which
-     * will have us lose the game; touched a platform which will allow us to jump again;
-     * or fall
      * checkCollisions checks if the Hero is in contact with other actors and responds accordinly
      * @param There are no parameters
      * @return Nothing is returned

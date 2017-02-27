@@ -22,8 +22,6 @@ public class Platform extends Actor
 
     
     /**
-     * Act - do whatever the Platform wants to do. This method is called whenever
-     * the 'Act' or 'Run' button gets pressed in the environment.
      * act controls the movement and existence of the Platform actors in the world
      * @param There are no parameters
      * @return Nothing is returned
@@ -41,5 +39,6 @@ public class Platform extends Actor
         {
             getWorld().removeObject(this);
         }
+        
     }    
 }

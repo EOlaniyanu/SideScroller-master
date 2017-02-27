@@ -35,10 +35,8 @@ public class Enemy extends Actor
         // Add code to have enemy move left here
         move(-2);
         
-        /**
-         * Check if imageCounter is >= 3. If so, mirror the image horizontally and
-         * set imageCounter to 0. Otherwise, increase the imageCounter by 1.
-         */
+        //Check if imageCounter is >= 3. If so, mirror the image horizontally and
+        //set imageCounter to 0. Otherwise, increase the imageCounter by 1.
         if( imageCounter >= 3 )
         {
             getImage().mirrorHorizontally();

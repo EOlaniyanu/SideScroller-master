@@ -13,8 +13,9 @@ public class Rasengan extends Actor
     
     private boolean chargedFull = true;
     private boolean goRight;
-    //private int power = 0;
     private Hero player;
+    //private int power = 0;
+    
     
     /**
      * Rasengan sets the image of the Rasengan when launched
@@ -73,11 +74,11 @@ public class Rasengan extends Actor
         
     }
     
-    
     //public void charged()
     //{
     //    if( Greenfoot.isKeyDown("space") )
     //    {
     //        power++;
     //  }
+    
 }

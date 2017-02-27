@@ -6,5 +6,5 @@ comment1.target=Platform()
 comment1.text=\r\n\ Platform\ scales\ the\ Platform\ to\ the\ desired\ size\ \r\n\ @param\ There\ are\ no\ parameters\r\n\ @return\ Nothing\ is\ returned\r\n
 comment2.params=
 comment2.target=void\ act()
-comment2.text=\r\n\ Act\ -\ do\ whatever\ the\ Platform\ wants\ to\ do.\ This\ method\ is\ called\ whenever\r\n\ the\ 'Act'\ or\ 'Run'\ button\ gets\ pressed\ in\ the\ environment.\r\n\ act\ controls\ the\ movement\ and\ existence\ of\ the\ Platform\ actors\ in\ the\ world\r\n\ @param\ There\ are\ no\ parameters\r\n\ @return\ Nothing\ is\ returned\r\n
+comment2.text=\r\n\ act\ controls\ the\ movement\ and\ existence\ of\ the\ Platform\ actors\ in\ the\ world\r\n\ @param\ There\ are\ no\ parameters\r\n\ @return\ Nothing\ is\ returned\r\n
 numComments=3
